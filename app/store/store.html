@@ -1,0 +1,12 @@
+<div class="row templates">
+    <div ng-repeat="store in store.Stores">
+        <div ng-repeat="product in store.Products">
+            <div class="col-md-3 template">
+                <img src="{{product.ProductImage}}" alt="">
+                <h3 class="store">{{store.StoreName}}</h3>
+                <h4 class="price">{{product.Price | currency}}</h4>
+                <h5 class="productName">{{product.ProductTitle}}</h5>
+            </div>
+        </div>
+    </div>
+</div>
